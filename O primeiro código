@@ -1,0 +1,94 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<ctype.h>
+#include<string.h>
+#include<windows.h>
+void resposta()
+{
+	int m=0,d=0;
+	
+	while(m!=4)
+	{
+		    printf("1: Sobre as escolas.\n2: Sobre esse mundo.\n3: Sobre os atributos magicos.\n4: Nao tenho nenhuma duvida.\n");
+		    scanf("%d",&m);
+		if(m==1)
+		{
+			printf("As escolas de magia servem para voce aprender a como catalizar a sua energia esperitual.\nElas surgiram de anos de estudos e avancos magicos de nobres magos.\n");
+			printf("Hoje em dia, caso queira viver em nossa sociedade e fundamental aprender a manipular a sua energia esperitual.");
+		}
+		if(m==2)
+		{
+			printf("O mundo de Farfalia e habitado por diversos tipos de racas como anoes, elfos, orcs e humanos.\n");
+			printf("Depois de anos de guerras entre as racas chegamos a uma epoca de paz entre as racas.\nOs humanos, elfos e anoes fizeram uma alianca para se juntar contra os orcs anos atras.\n");
+			printf("Atualmentes os orcs andam")
+		}
+		}
+}
+int main()
+{
+	char a[10], b[10];
+	float x=0.0, y=0.0;
+	int i=0, j=0, r=0;
+	
+	printf("Digite seu primeiro nome: \n");
+	scanf("%s", &a);
+	printf("Digite seu segundo nome: \n");
+	scanf("%s", &b);
+	printf("Bem vindo %s %s!\nEspero que nao se importe se usarmos somente %s.\n", a, b, a);
+	Sleep(1500);
+	printf("Este e o mundo da magia. Aqui ate mesmo sua imaginacao bizarra pode se\ntornar real com magia e fe.\n");
+	Sleep(1500);
+	printf("Eu sou Vanturiel, conselheiro do ministerio da magia.\nFacamos testes para saber para que escola manda-lo.\n");
+	Sleep(1500);
+	printf("Temos 5 colegios. Todos ensinam\no basico, mas desenvolvem os talentos de forma\nespecifica.");
+	Sleep(1500);
+	printf("\nOu seja, temos escolas que desenvolvem\nmuito mais determinado atributo que outros.\nSiga-me vou falar mais...");
+	for(int i=0; i<10; i++){
+		printf("\nandando...");
+		Sleep(200);
+	}
+	printf("\nFique sob o ciculo magico.");
+	Sleep(800);
+	printf("\nQual sua idade?\n");
+	scanf("%d", &i);
+	if((i>=10)&&(i<=16)){
+		printf("\nComo voce e jovem!\n");
+	}
+	if((i>=17)&&(i<=29)){
+		printf("\nEsta em boa fase\n");
+	}
+	else
+	{
+		printf("\nBom...Nunca e tarde para comecar\n");
+	}
+	Sleep(1500);
+	printf("\nAgora vejamos seu atributo magico.\nEles se dividem em cinco elementos basicos.\nMas ha atrbutos avancados atraves da combinacao de elemtos");
+	Sleep(1500);
+	printf("\nEntre os basicos temos:");
+	for(int i=0; i<1; i++){
+		Sleep(600);
+		printf("\nfogo\n\a");
+		Sleep(600);
+		printf("agua\n\a");
+		Sleep(600);
+		printf("terra\n\a");
+		Sleep(600);
+		printf("ar\n\a");
+		Sleep(600);
+		printf("raio\n\a");
+	}
+	Sleep(1500);
+	printf("De acordo com suas caraceristicas o circulo\nvai ajudar voce a despertar a magia.");
+	Sleep(1500);
+	printf("\nAgora responda ao circulo, deixe ele falar com seu coracao.\n");
+	Sleep(1500);
+	printf("Eu sou o circulo, venha a mim seu coracao.\nAlguma pergunta?\n");
+	printf("1: sim!\n2: Nenhuma!\n");
+	scanf("%d", &r);
+	if(r==1)
+	{
+		resposta();
+	}
+
+	return 0;
+}
